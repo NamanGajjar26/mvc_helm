@@ -25,5 +25,7 @@ jobs:
 
       - name: Run chart-releaser
         uses: namangajjar/chart-releaser-action@v1.7.0
+        with:
+          charts_dir: testmvchelm
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
